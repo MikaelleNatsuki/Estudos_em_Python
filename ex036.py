@@ -1,0 +1,5 @@
+print('Primeiro e ultimo nome')
+nome = (str(input('Digite o seu nome inteiro: '))).strip()
+dividido = (nome.split())
+print('O seu primeiro nome é: ', dividido[0])
+print('O seu ultimo nome é: ', dividido[-1])

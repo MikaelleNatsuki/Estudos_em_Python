@@ -1,0 +1,7 @@
+print ('Programa que leia o nome completo do usuario e exiba de varias formas')
+nome = (input('Digite o seu nome completo: ')).strip()
+print ('Seu nome completo em letras maiúsculas é: ',(nome.upper()))
+print ('Seu nome completo em letras minúsculas é: ',(nome.lower()))
+print ('Seu nome tem ao todo {} letras'.format (len(nome)-nome.count(' ')))
+splitado = nome.split()
+print('Seu primeiro nome é {} e ele possui {} letras'.format(splitado[0], len(splitado[0])))

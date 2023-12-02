@@ -1,0 +1,6 @@
+print ('contador de caracteres')
+nome = input('Digite o seu nome completo:').strip()
+splitado = nome.split()
+nomecom = len(nome.replace(' ',''))
+print ('O seu nome completo possui {} letras'.format(nomecom))
+print ('O seu primeiro nome possui {} letras'.format(len(splitado[0])))

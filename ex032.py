@@ -1,0 +1,7 @@
+print('0 a 9999')
+numero = int(input('Digite um Número :'))
+milhar, centena, dezena, unidade = map(int, str(numero).zfill(4))
+print('Unidade:', unidade)
+print('Dezena:', dezena)
+print('Centena', centena)
+print('Milhar', milhar)
