@@ -2,12 +2,15 @@ from datetime import date
 print('\033[34m-\033'*32)
 print('\033[34mAlistamento ao serviço militar\033')
 print('-'*32)
+se = str(input('Você é do sexo (Masculino/Feminino?:) ')).capitalize()
 anonasc = int(input('Qual o seu ano de nascimento?: '))
 anoatual = date.today().year
 idade = (anoatual - anonasc)
-fal = 17 - idade
-sob = idade - 17
-if idade < 17:
+fal = 18 - idade
+sob = idade - 18
+if se == 'Feminino'.capitalize():
+    print('Infelizmente pessoas do sexo feminino não podem se alistar.')
+elif idade <= 17:
     print('''\033[90mSua idade atual é de : {} anos.
 Faltam {} anos para o seu alistamento.\033'''.format(idade, fal))
 elif idade == 17:
