@@ -1,0 +1,10 @@
+print('\033[35m=\033'*25)
+print('   10 TERMOS DE UMA PA')
+print('\033[35m=\033'*25)
+vez = int(10)
+ter = int(input('\033[36mDigite o Primeiro termo:\033 '))
+ra = int(input('Digite a Razão:'))
+print('Segue a sequência:')
+for pa in range(vez):
+    print('{}'.format(ter + (pa * ra)), end=' → ')
+print('Fim!')
