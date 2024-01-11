@@ -1,6 +1,6 @@
-print('\33[31mEmprestimo bancário para financimento de um casa\33')
+print('\33[31mEmprestimo bancário para financimento de um casa\33[m')
 # Lembrando que o valor da mensalidade nao pode passar de 30% do salario do usuario.
-nome = str(input('\033[37mOlá, qual o seu nome? :\033'))
+nome = str(input('\033[37mOlá, qual o seu nome? :\033[m'))
 valcasa = float(input('Digite o valor da casa: '))
 anos = int(input('Em quantos anos você pretende pagar?: '))
 salario = float(input('Qual é o seu salário?: '))
